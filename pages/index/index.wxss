@@ -1,0 +1,22 @@
+/**index.wxss**/
+.indexBody{
+  background-color:#f8f8f8;
+}
+.tabbar-content{
+  display:flex;
+  justify-content:space-between;
+  margin:10px 0 20px 0;
+  padding:15px;
+  background-color:#fff;
+  font-size:12px;
+  text-align:center;
+  color:#ff586c;
+}
+.tabbar-item image{
+  width:40px; 
+  height:40px;
+}
+.index-img{
+  height:120px;
+  background-color:#fff;
+}

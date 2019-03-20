@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="indexBody">
+  <swiper autoplay="{{autoplay}}" duration="{{duration}}" circular="{{circular}}">
+     <block wx:for="{{imgUrls}}" wx:key="item">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" style="width:100%;height:100%;" />
+        </swiper-item>
+      </block>
+  </swiper>
+  <view class="tabbar-content">
+    <view class="tabbar-item" wx:for="{{tabbarList}}" wx:key="item">
+      <navigator url="{{item.pageurl}}" open-type="navigate" hover-class="none">
+        <image src="{{item.srcs}}"></image>
+        <view>{{item.name}}</view>
+      </navigator>
+    </view>
+  </view>
+  <i-cell-group>
+    <i-cell  title="营业时间"  value="08:00~22:00">
+       <i-icon slot="icon" type="time_fill" size="20" color="#80848f" />
+    </i-cell>
+    <i-cell  title="0571-6666665" bindtap="phoneCall">
+        <i-icon slot="icon" type="mobilephone_fill" size="20" color="#80848f" />
+    </i-cell>
+    <i-cell title="地图导航" is-link>
+       <i-icon slot="icon" type="coordinates_fill" size="20" color="#80848f" />
+    </i-cell>
+  </i-cell-group>
+</view>

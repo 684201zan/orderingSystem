@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/onlineOrder/index"
+   
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#2c2a2a",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "i-icon": "../../dist/icon/index",
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index"
+  }
+}

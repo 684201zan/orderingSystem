@@ -1,0 +1,13 @@
+<!-- 点菜主页 -->
+<view>
+  <view class='online-index'>
+    <scroll-view scroll-y="true" class="menucategory">
+      <view wx:for="{{shopList}}" wx:key="item">
+        <span>{{item.M_DL_NAME}}</span>
+      </view>
+    </scroll-view>
+    <scroll-view scroll-y="true" style="height:100%" class="shopmenu">
+      
+    </scroll-view>
+  </view>
+</view>
